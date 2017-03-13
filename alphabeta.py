@@ -132,7 +132,7 @@ def alphabeta_full_search(state, game):
 """
 search upto cutoff depth
 """
-def alphabeta_pruning_search(state, game, d=3, cutoff_test=None, eval_function=None):
+def alphabeta_pruning_search(state, game, d=9, cutoff_test=None, eval_function=None):
     player = game.to_move(state)
 
     def max_prune_value(state, alpha, beta, depth):
