@@ -130,4 +130,7 @@ if __name__ == "__main__":
         computer_move = determine(board, player)
         board.make_move(computer_move, player)
         board.show()
-    print "winner is", board.winner()
+    if board.winner() == None:
+        print 'Game tied'
+    else:
+        print "Game won by ", board.winner()
